@@ -1,0 +1,29 @@
+{
+  "name": "windy-plugin-convective-tracker",
+  "version": "1.0.8",
+  "private": true,
+  "type": "module",
+  "description": "Manual convective-cell tracking and motion extrapolation for Windy.com",
+  "scripts": {
+    "start": "rollup -w -c",
+    "build": "rm -rf dist && mkdir dist && SERVE=false rollup -c && cp package.json dist/",
+    "build:win": "if exist dist rmdir /s /q dist && mkdir dist && set SERVE=false&& rollup -c && copy package.json dist\\package.json"
+  },
+  "dependencies": {
+    "@windycom/plugin-devtools": "^3.0.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.34.8",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-serve": "^2.0.3",
+    "rollup-plugin-svelte": "^7.2.2",
+    "rollup-plugin-swc3": "^0.12.1",
+    "svelte": "^4.2.19",
+    "svelte-preprocess": "^5.1.4",
+    "typescript": "^5.7.3"
+  },
+  "main": "dist/plugin.min.js"
+}
