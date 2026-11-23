@@ -2,7 +2,7 @@ import type { ExternalPluginConfig } from '@windy/interfaces';
 
 const config: ExternalPluginConfig = {
   name: 'windy-plugin-convective-tracker',
-  version: '1.0.8',
+  version: '1.0.9',
   icon: '🌩️',
   title: 'Convective Tracker',
   description: 'Rastreamento manual de células convectivas e extrapolação de movimento por até 120 minutos.',
@@ -13,7 +13,7 @@ const config: ExternalPluginConfig = {
   mobileUI: 'fullscreen',
   routerPath: '/convective-tracker',
   listenToSingleclick: true,
-  private: true
+  private: false
 };
 
 export default config;
