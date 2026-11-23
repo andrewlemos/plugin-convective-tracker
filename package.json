@@ -1,6 +1,6 @@
 {
   "name": "windy-plugin-convective-tracker",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "private": true,
   "type": "module",
   "description": "Manual convective-cell tracking and motion extrapolation for Windy.com",
